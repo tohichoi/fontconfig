@@ -1,0 +1,135 @@
+<?xml version='1.0'?>
+<!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
+<fontconfig>
+ <alias>
+  <family>NanumGothic</family>
+  <prefer>
+   <family>Noto Sans Korean</family>
+  </prefer>
+ </alias>
+ <alias>
+  <family>Arial</family>
+  <prefer>
+   <family>Noto Sans Korean</family>
+  </prefer>
+ </alias>
+ <alias>
+  <family>UnDotum</family>
+  <prefer>
+   <family>Noto Sans Korean</family>
+  </prefer>
+ </alias>
+ <alias>
+  <family>은 돋움</family>
+  <prefer>
+   <family>Noto Sans Korean</family>
+  </prefer>
+ </alias>
+ <alias>
+  <family>HCR Dotum</family>
+  <prefer>
+   <family>Noto Sans Korean</family>
+  </prefer>
+ </alias>
+ <alias>
+  <family>HCR Batang</family>
+  <prefer>
+   <family>Noto Sans Korean</family>
+  </prefer>
+ </alias>
+ <alias>
+  <family>Nanum Gothic</family>
+  <prefer>
+   <family>Noto Sans Korean</family>
+  </prefer>
+ </alias>
+ <alias>
+  <family>나눔고딕</family>
+  <prefer>
+   <family>Noto Sans Korean</family>
+  </prefer>
+ </alias>
+ <alias>
+  <family>Courier</family>
+  <prefer>
+   <family>DejaVu Sans</family>
+  </prefer>
+ </alias> 
+ <alias>
+  <family>courier</family>
+  <prefer>
+   <family>DejaVu Sans</family>
+  </prefer>
+ </alias> 
+ <alias>
+  <family>나눔 고딕</family>
+  <prefer>
+   <family>Noto Sans Korean</family>
+  </prefer>
+ </alias>
+ <alias>
+  <family>sans-serif</family>
+  <prefer>
+   <family>Noto Sans Korean</family>
+  </prefer>
+ </alias>
+ <match target="pattern">
+  <test compare="contains" name="lang" qual="any">
+   <string>ko</string>
+  </test>
+  <test compare="contains" name="lang" qual="any">
+   <string>en</string>
+  </test>
+  <test compare="eq" name="family" qual="any">
+   <string>sans-serif</string>
+  </test>
+  <test compare="eq" name="family" qual="any">
+    <string>Consolas</string>
+  </test>
+  <test compare="eq" name="family" qual="any">
+    <string>Courier</string>
+  </test>
+  <test compare="eq" name="family" qual="any">
+   <string>Sans Serif</string>
+  </test>
+  <test compare="eq" name="family" qual="any">
+   <string>UnDotum</string>
+  </test>
+  <test compare="eq" name="family" qual="any">
+   <string>은 돋움</string>
+  </test>
+  <test compare="eq" name="family" qual="any">
+   <string>HCR Dotum</string>
+  </test>
+  <test compare="eq" name="family" qual="any">
+   <string>HCR Batang</string>
+  </test>
+  <test compare="eq" name="family" qual="any">
+   <string>Arial</string>
+  </test>
+  <edit binding="strong" mode="prepend_first" name="family">
+   <string>Noto Sans Korean</string>
+  </edit>
+ </match>
+ <match target="font">
+  <edit mode="assign" name="rgba">
+   <const>rgb</const>
+  </edit>
+ </match>
+ <match target="font">
+  <edit mode="assign" name="hintstyle">
+   <const>hintfull</const>
+  </edit>
+ </match>
+ <dir>~/.fonts</dir>
+ <match target="font">
+  <edit mode="assign" name="hinting">
+   <bool>true</bool>
+  </edit>
+ </match>
+ <match target="font">
+  <edit mode="assign" name="antialias">
+   <bool>true</bool>
+  </edit>
+ </match>
+</fontconfig>
